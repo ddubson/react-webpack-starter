@@ -6,7 +6,8 @@
   "scripts": {
     "dist": "webpack --config webpack.config.js",
     "start": "webpack-dev-server --progress --colors --profile",
-    "test": "karma start --single-run --browsers PhantomJS"
+    "test": "karma start --single-run --browsers PhantomJS",
+    "eslint": "node_modules/.bin/eslint src/* spec/*"
   },
   "author": "Dmitriy Dubson",
   "license": "MIT",
@@ -20,10 +21,14 @@
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
+    "babel-eslint": "^6.1.2",
     "babel-loader": "^6.4.0",
     "babel-preset-env": "^1.2.0",
     "babel-register": "^6.23.0",
     "enzyme": "^2.7.1",
+    "eslint": "^3.17.0",
+    "eslint-plugin-flowtype": "^2.30.2",
+    "eslint-plugin-react": "^6.10.0",
     "jasmine": "^2.5.3",
     "jasmine-core": "^2.5.2",
     "karma": "^1.5.0",

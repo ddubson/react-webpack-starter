@@ -5,4 +5,5 @@ before_install:
   - npm install
 script:
   - npm run dist
+  - npm run eslint
   - npm run test
