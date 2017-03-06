@@ -1,5 +1,6 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './public/index.html',
     filename: 'index.html',
@@ -7,16 +8,21 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
-  },
-  module: {
-    loaders: [
-        { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-        { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
-    ]
-  },
-  plugins: [HtmlWebpackPluginConfig]
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, "dist"),
+        filename: "bundle.js"
+    },
+    module: {
+        loaders: [
+            {test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/},
+            {test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/}
+        ]
+    },
+    plugins: [HtmlWebpackPluginConfig],
+    externals: {
+        'react/addons': true,
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true,
+    }
 }
