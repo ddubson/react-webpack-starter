@@ -6,7 +6,7 @@
   "scripts": {
     "dist": "webpack --config webpack.config.js",
     "start": "webpack-dev-server --progress --colors --profile",
-    "test": "karma start"
+    "test": "karma start --single-run --browsers PhantomJS"
   },
   "author": "Dmitriy Dubson",
   "license": "MIT",
@@ -30,8 +30,10 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.2",
+    "phantomjs": "^2.1.7",
     "react-addons-test-utils": "^15.4.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
