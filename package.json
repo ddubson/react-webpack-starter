@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "dist": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server --progress --colors --profile"
+    "start": "webpack-dev-server --progress --colors --profile",
+    "test": "karma start"
   },
   "author": "Dmitriy Dubson",
   "license": "MIT",
@@ -21,6 +22,16 @@
     "babel-core": "^6.23.1",
     "babel-loader": "^6.4.0",
     "babel-preset-env": "^1.2.0",
+    "babel-register": "^6.23.0",
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.2",
+    "react-addons-test-utils": "^15.4.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   }
