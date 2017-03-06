@@ -1,6 +1,11 @@
+[![Build Status](https://travis-ci.org/ddubson/react-webpack-babel-npm.svg?branch=master)](https://travis-ci.org/ddubson/react-webpack-babel-npm)
+[![bitHound Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/badges/dependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/badges/devDependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/master/dependencies/npm)
+
 # React / Babel / Webpack skeleton project
 
 This project serves to jumpstart anyone who wants to have ReactJS up and running in no time with all the webpack and babel configurations pre-built.
+
 
 ## Building and Running the project
 
@@ -13,17 +18,17 @@ npm install
 npm run start
 ```
 
-This project has webpack and babel configured from scratch so you have full control of customizations to add should you choose to.
+This project has webpack and babel configured from scratch so you have full control of customizations to add or remove should you choose to.
 
 ## Commands available
 
-#### Build
+#### Building for production
 
 Building the project for production use:
 
-`npm run build`
+`npm run dist`
 
-uses webpack to transpile all the resources in the project into the `dist/` directory.
+uses babel to transpile all the resources in the project into the `dist/` directory.
 
 #### Run locally
 
