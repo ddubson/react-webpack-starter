@@ -4,7 +4,7 @@
   "description": "Skeleton project for React",
   "main": "src/index.js",
   "scripts": {
-    "dist": "webpack --config webpack.config.js",
+    "dist": "npm run eslint && npm run test && webpack --config webpack.config.js",
     "start": "webpack-dev-server --progress --colors --profile",
     "test": "karma start --single-run --browsers PhantomJS",
     "eslint": "node_modules/.bin/eslint src/* spec/*"

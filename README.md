@@ -56,4 +56,12 @@ OR
 
 `jasmine`
 
+### Running syntax linter - ESLint
+
+To verify syntax, run:
+
+`npm run eslint`
+
+This command checks the src and spec directories.
+
 ---
