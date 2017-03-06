@@ -13,17 +13,17 @@ npm install
 npm run start
 ```
 
-This project has webpack and babel configured from scratch so you have full control of customizations to add should you choose to.
+This project has webpack and babel configured from scratch so you have full control of customizations to add or remove should you choose to.
 
 ## Commands available
 
-#### Build
+#### Building for production
 
 Building the project for production use:
 
-`npm run build`
+`npm run dist`
 
-uses webpack to transpile all the resources in the project into the `dist/` directory.
+uses babel to transpile all the resources in the project into the `dist/` directory.
 
 #### Run locally
 
