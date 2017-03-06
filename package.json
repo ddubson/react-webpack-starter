@@ -4,10 +4,8 @@
   "description": "Skeleton project for React",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "local": "webpack-dev-server",
-    "build": "babel src -d lib",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --progress --colors --profile"
   },
   "author": "Dmitriy Dubson",
   "license": "MIT",
