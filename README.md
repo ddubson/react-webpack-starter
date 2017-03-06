@@ -22,7 +22,7 @@ This project has webpack and babel configured from scratch so you have full cont
 
 ## Commands available
 
-#### Building for production
+### Building for production
 
 Building the project for production use:
 
@@ -30,10 +30,30 @@ Building the project for production use:
 
 uses babel to transpile all the resources in the project into the `dist/` directory.
 
-#### Run locally
+### Run locally
 
 Run the project on your local machine
 
 `npm run start`
 
 uses webpack-dev-server to run the React app on your machine.
+
+### Executing Tests
+
+This project uses:
+
+```
+Karma -> Test Runner 
+Enzyme -> React Test Utility Framework (AirBnB)
+Jasmine -> BDD Test Framework (Pivotal Labs)
+```
+
+The test files (or `specs`) are stored in `spec/` directory. The full test suite can be run by:
+
+`npm run test`
+
+OR
+
+`jasmine`
+
+---
