@@ -1,3 +1,6 @@
+[![bitHound Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/badges/dependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/badges/devDependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/master/dependencies/npm)
+
 # React / Babel / Webpack skeleton project
 
 This project serves to jumpstart anyone who wants to have ReactJS up and running in no time with all the webpack and babel configurations pre-built.
