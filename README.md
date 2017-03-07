@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/ddubson/react-webpack-babel-npm.svg?branch=master)](https://travis-ci.org/ddubson/react-webpack-babel-npm)
-[![bitHound Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/badges/dependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/master/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/badges/devDependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel-npm/master/dependencies/npm)
+[![Build Status](https://travis-ci.org/ddubson/react-webpack-babel.svg?branch=master)](https://travis-ci.org/ddubson/react-webpack-babel)
+[![bitHound Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel/badges/dependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel/badges/devDependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel/master/dependencies/npm)
 
 # React / Babel / Webpack boilerplate project
 
@@ -43,7 +43,7 @@ uses webpack-dev-server to run the React app on your machine.
 This project uses:
 
 ```
-Karma -> Test Runner 
+Karma -> Test Runner
 Enzyme -> React Test Utility Framework (AirBnB)
 Jasmine -> BDD Test Framework (Pivotal Labs)
 ```
