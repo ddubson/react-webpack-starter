@@ -21,7 +21,7 @@
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
-    "babel-eslint": "^6.1.2",
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.4.0",
     "babel-preset-env": "^1.2.0",
     "babel-register": "^6.23.0",
@@ -39,7 +39,7 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.2",
-    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.14",
     "react-addons-test-utils": "^15.4.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
