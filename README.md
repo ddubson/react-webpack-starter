@@ -12,8 +12,8 @@ This project serves to jumpstart anyone who wants to have ReactJS up and running
 Here's what you do to get this up and running on your machine:
 
 ```
-git clone https://github.com/ddubson/react-webpack-babel-npm
-cd react-webpack-babel-npm
+git clone https://github.com/ddubson/react-webpack-babel
+cd react-webpack-babel
 npm install
 npm run start
 ```
