@@ -11,7 +11,7 @@ module.exports = function (config) {
         ],
         preprocessors: {
             'spec/**/*_spec.js': ['webpack'],
-            'spec/**/*_spac.jsx': ['webpack']
+            'spec/**/*_spec.jsx': ['webpack']
         },
         reporters: ['dots'],
         webpack: webpackConfig,
