@@ -4,7 +4,7 @@
 
 # React / Babel / Webpack boilerplate project
 
-This project serves to jumpstart anyone who wants to have ReactJS up and running in no time with all the webpack and babel configurations pre-built.
+This project serves to jumpstart anyone who wants to have React up and running in no time with all the Webpack and Babel configurations pre-built.
 
 
 ## Building and Running the project
@@ -43,25 +43,20 @@ uses webpack-dev-server to run the React app on your machine.
 This project uses:
 
 ```
-Karma -> Test Runner
 Enzyme -> React Test Utility Framework (AirBnB)
-Jasmine -> BDD Test Framework (Pivotal Labs)
+Jest -> Test Runner and Spec Framework (Facebook)
 ```
 
-The test files (or `specs`) are stored in `spec/` directory. The full test suite can be run by:
+The test files (or `specs`) are stored in `__tests__/` directory. The full test suite can be run by:
 
 `npm run test`
-
-OR
-
-`jasmine`
 
 ### Running syntax linter - ESLint
 
 To verify syntax, run:
 
-`npm run eslint`
+`npm run lint`
 
-This command checks the src and spec directories.
+This command checks the `src` and `__tests__` directories.
 
 ---

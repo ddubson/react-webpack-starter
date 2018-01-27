@@ -1,9 +1,9 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import App from '../src/App.jsx'
+import App from '../src/App'
 
-describe("Index", function () {
-    it("should display Hello World text", function () {
+describe("App", () => {
+    it("should display Hello World text", () => {
         const wrapper = shallow(<App />);
         expect(wrapper.contains("Hello World!")).toBe(true);
     });
