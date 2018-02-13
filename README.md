@@ -4,7 +4,8 @@
 
 # React / Babel / Webpack boilerplate project
 
-This project serves to jumpstart anyone who wants to have React up and running in no time with all the Webpack and Babel configurations pre-built.
+This project serves to jumpstart anyone who wants to have React up and running in no time with all the Webpack and Babel configurations pre-built. 
+Now with Redux!
 
 
 ## Building and Running the project
