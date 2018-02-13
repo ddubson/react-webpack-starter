@@ -8,7 +8,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.jsx',
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js"
@@ -22,7 +22,7 @@ module.exports = {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/,
-                query: { presets: ['env', 'react']}
+                query: { presets: ['env', 'react'] }
             },
         ]
     },
