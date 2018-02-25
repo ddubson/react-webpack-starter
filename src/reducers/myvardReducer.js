@@ -4,7 +4,7 @@ const initialState = {
   myVar: 'Hello World!',
 };
 
-export default function myvars(state = initialState, action) {
+export default function myvarsReducer(state = initialState, action) {
   switch (action.type) {
     case UPDATE_MY_VAR: {
       return {

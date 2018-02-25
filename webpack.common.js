@@ -19,6 +19,10 @@ module.exports = {
         exclude: /node_modules/,
         query: {presets: ['env', 'react']}
       },
+      {
+        test: /\.(s*)css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
     ]
   },
   plugins: [
@@ -35,4 +39,4 @@ module.exports = {
     'react/lib/ExecutionEnvironment': true,
     'react/lib/ReactContext': true,
   }
-}
+};

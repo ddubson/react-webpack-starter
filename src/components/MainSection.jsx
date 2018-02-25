@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 
 const MainSection = props => (
-  <div>
+  <div className="container app-bg">
     {props.myVariables.myVar}
     <Button bsStyle="info" onClick={() => { props.actions.updateMyVar(); }}>
       Click to update Redux state.

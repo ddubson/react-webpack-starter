@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import * as MyVarActions from '../actions';
 import MainSection from '../components/MainSection';
+import '../styles/app.scss';
 
 const App = ({ myVariables, actions }) => (
   <MainSection myVariables={myVariables} actions={actions} />
