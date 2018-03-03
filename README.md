@@ -23,6 +23,17 @@ This project has webpack and babel configured from scratch so you have full cont
 
 ## Commands available
 
+
+### Run dev server
+
+Run the project on your local machine with dev configurations
+
+`yarn start`
+
+uses webpack-dev-server to run the React app on your machine.
+
+---
+
 ### Building for production
 
 Building the project for production use:
@@ -31,13 +42,23 @@ Building the project for production use:
 
 uses babel to transpile all the resources in the project into the `dist/` directory.
 
-### Run locally
+### Run production build
 
-Run the project on your local machine
+First, build the bundles with `yarn dist`
 
-`yarn start`
+Fetch a standalone static server:
 
-uses webpack-dev-server to run the React app on your machine.
+```
+npm i -g serve
+```
+
+Serve the static directory:
+
+```
+serve -s dist
+```
+
+---
 
 ### Executing Tests
 

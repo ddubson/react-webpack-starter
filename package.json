@@ -4,7 +4,7 @@
   "description": "Skeleton project for React",
   "main": "src/index.js",
   "scripts": {
-    "dist": "npm run test && webpack --config webpack.prod.js",
+    "dist": "npm run test && webpack -p --config webpack.prod.js",
     "start": "webpack-dev-server --open --config webpack.dev.js --progress",
     "test": "jest && eslint src/* __tests__/*",
     "lint": "eslint --fix src/* __tests__/*"
