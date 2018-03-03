@@ -13,16 +13,13 @@
   "author": "Dmitriy Dubson",
   "license": "MIT",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
-    "redux": "^3.7.2",
-    "request": "^2.83.0"
-  },
-  "peerDependencies": {
-    "request": "^2.83.0"
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

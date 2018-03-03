@@ -15,8 +15,8 @@ Here's what you do to get this up and running on your machine:
 ```
 git clone https://github.com/ddubson/react-webpack-babel
 cd react-webpack-babel
-npm install
-npm run start
+yarn install
+yarn start
 ```
 
 This project has webpack and babel configured from scratch so you have full control of customizations to add or remove should you choose to.
@@ -27,7 +27,7 @@ This project has webpack and babel configured from scratch so you have full cont
 
 Building the project for production use:
 
-`npm run dist`
+`yarn dist`
 
 uses babel to transpile all the resources in the project into the `dist/` directory.
 
@@ -35,7 +35,7 @@ uses babel to transpile all the resources in the project into the `dist/` direct
 
 Run the project on your local machine
 
-`npm run start`
+`yarn start`
 
 uses webpack-dev-server to run the React app on your machine.
 
@@ -50,13 +50,13 @@ Jest -> Test Runner and Spec Framework (Facebook)
 
 The test files (or `specs`) are stored in `__tests__/` directory. The full test suite can be run by:
 
-`npm run test`
+`yarn test`
 
 ### Running syntax linter - ESLint
 
 To verify syntax, run:
 
-`npm run lint`
+`yarn lint`
 
 This command checks the `src` and `__tests__` directories.
 
