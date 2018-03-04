@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import myvarsReducer from './myvardReducer';
+import myvarsReducer from './myvarsReducer';
 
 const rootReducer = combineReducers({
   myvars: myvarsReducer,

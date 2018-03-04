@@ -12,7 +12,8 @@ module.exports = merge(common, {
       'react-bootstrap',
       'react-redux',
       'redux',
-      'prop-types'
+      'prop-types',
+      'immutability-helper'
     ],
     app: ['./src/index.jsx']
   },

@@ -1,5 +1,5 @@
-import UPDATE_MY_VAR from '../constants/ActionTypes';
+import { actions } from '../constants';
 
-const updateMyVar = myVar => ({ type: UPDATE_MY_VAR, payload: myVar });
+const updateMyVar = myVar => ({ type: actions.UPDATE_MY_VAR, payload: myVar });
 
 export { updateMyVar };

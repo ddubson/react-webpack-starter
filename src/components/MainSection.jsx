@@ -1,24 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import * as MyVarActions from '../actions';
 
-const MainSection = props => (
-  <div className="container app-bg">
-    {props.myVariables.myVar}
-    <Button bsStyle="info" onClick={() => { props.actions.updateMyVar(); }}>
-      Click to update Redux state.
-    </Button>
-  </div>
-);
+export class MainSection extends React.PureComponent {
+  render() {
+    return (
+      <div className="container app-bg">
+        {this.props.myVar}
+        <Button
+          bsStyle="info"
+          onClick={this.props.updateMyVar}
+        >
+          Click to update Redux state.
+        </Button>
+      </div>
+    );
+  }
+}
 
-export { MainSection as default };
+const mapStateToProps = state => ({
+  myVar: state.myvars.myVar,
+});
 
-MainSection.propTypes = {
-  myVariables: PropTypes.shape({
-    myVar: PropTypes.string.isRequired,
-  }).isRequired,
-  actions: PropTypes.shape({
-    updateMyVar: PropTypes.func.isRequired,
-  }).isRequired,
+const mapDispatchToProps = {
+  updateMyVar: MyVarActions.updateMyVar,
 };
 
+MainSection.propTypes = {
+  myVar: PropTypes.string.isRequired,
+  updateMyVar: PropTypes.func.isRequired,
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(MainSection);

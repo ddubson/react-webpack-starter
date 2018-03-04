@@ -7,6 +7,7 @@
     "dist": "npm run test && webpack -p --config webpack.prod.js",
     "start": "webpack-dev-server --open --config webpack.dev.js --progress",
     "test": "jest && eslint src/* __tests__/*",
+    "watch": "jest --watchAll",
     "lint": "eslint --fix src/* __tests__/*"
   },
   "repository": "https://github.com/ddubson/react-webpack-babel",
@@ -14,6 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "immutability-helper": "^2.6.6",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
@@ -53,6 +55,13 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
   },
   "jest": {
     "bail": true,
