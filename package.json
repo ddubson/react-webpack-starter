@@ -6,9 +6,9 @@
   "scripts": {
     "dist": "npm run test && webpack -p --config webpack.prod.js",
     "start": "webpack-dev-server --open --config webpack.dev.js --progress",
-    "test": "jest && eslint src/* __tests__/*",
+    "test": "jest && eslint --ext .js,.jsx src/* __tests__/*",
     "watch": "jest --watchAll",
-    "lint": "eslint --fix src/* __tests__/*"
+    "lint": "eslint --fix --ext .js,.jsx src/* __tests__/*"
   },
   "repository": "https://github.com/ddubson/react-webpack-babel",
   "author": "Dmitriy Dubson",
@@ -27,7 +27,7 @@
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.4.0",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
@@ -52,7 +52,7 @@
     "source-map": "^0.7.0",
     "style-loader": "^0.20.2",
     "uglifyjs-webpack-plugin": "^1.1.8",
-    "webpack": "^2.2.1",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
   },
