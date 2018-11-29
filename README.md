@@ -1,6 +1,4 @@
 [![Build Status](https://travis-ci.org/ddubson/react-webpack-babel.svg?branch=master)](https://travis-ci.org/ddubson/react-webpack-babel)
-[![bitHound Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel/badges/dependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel/master/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/ddubson/react-webpack-babel/badges/devDependencies.svg)](https://www.bithound.io/github/ddubson/react-webpack-babel/master/dependencies/npm)
 
 # React / Babel / Webpack boilerplate project
 
