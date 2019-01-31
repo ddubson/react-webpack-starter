@@ -11,12 +11,11 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {presets: ['env', 'react', 'stage-2']}
       },
       {
         test: /\.(s*)css$/,

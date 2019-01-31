@@ -14,7 +14,7 @@
   "author": "Dmitriy Dubson",
   "license": "MIT",
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
+    "@babel/polyfill": "^7.0.0",
     "immutability-helper": "^2.6.6",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
@@ -24,14 +24,23 @@
     "redux": "^3.7.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-core": "^6.23.1",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-2": "^6.24.1",
-    "babel-register": "^6.23.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^24.0.0",
+    "babel-loader": "^8.0.5",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
     "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.10",
     "enzyme": "^3.1.0",
@@ -42,7 +51,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
-    "html-webpack-plugin": "^2.28.0",
+    "html-webpack-plugin": "^3.2.0",
     "inline-source-map": "^0.6.2",
     "jest": "^24.0.0",
     "node-sass": "^4.7.2",
@@ -52,16 +61,27 @@
     "source-map": "^0.7.0",
     "style-loader": "^0.20.2",
     "uglifyjs-webpack-plugin": "^1.1.8",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1",
-    "webpack-merge": "^4.1.1"
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
   },
   "babel": {
     "presets": [
-      "env",
-      "react",
-      "stage-2"
-    ]
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        "@babel/plugin-proposal-function-sent",
+        "@babel/plugin-proposal-export-namespace-from",
+        "@babel/plugin-proposal-numeric-separator",
+        "@babel/plugin-proposal-throw-expressions",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-syntax-import-meta",
+        ["@babel/plugin-proposal-class-properties", { "loose": false }],
+        "@babel/plugin-proposal-json-strings"
+      ]
   },
   "jest": {
     "bail": true,
