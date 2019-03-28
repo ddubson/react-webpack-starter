@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/ddubson/react-webpack-babel.svg?branch=master)](https://travis-ci.org/ddubson/react-webpack-babel)
 
-# React / Babel / Webpack boilerplate project
+# React with Webpack Starter Kit
 
 This project serves to jumpstart anyone who wants to have React up and running in no time with all the Webpack and Babel configurations pre-built. 
 Now with Redux!
@@ -11,8 +11,8 @@ Now with Redux!
 Here's what you do to get this up and running on your machine:
 
 ```
-git clone https://github.com/ddubson/react-webpack-babel
-cd react-webpack-babel
+git clone https://github.com/ddubson/react-webpack-starter
+cd react-webpack-starter
 yarn install
 yarn start
 ```
