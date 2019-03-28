@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ddubson/react-webpack-babel.svg?branch=master)](https://travis-ci.org/ddubson/react-webpack-babel)
+[![Build Status](https://travis-ci.org/ddubson/react-webpack-starter.svg?branch=master)](https://travis-ci.org/ddubson/react-webpack-starter)
 
 # React with Webpack Starter Kit
 
